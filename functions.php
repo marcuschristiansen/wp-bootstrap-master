@@ -7,6 +7,10 @@
  * @package wp_starter
  */
 
+// Register Custom Navigation Walker
+//require_once('inc/wbs4navwalker.php'); // Bootstrap 3
+require_once('inc/bs4navwalker.php'); // Bootstrap 4
+
 if ( ! function_exists( 'wp_starter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -131,6 +135,21 @@ function wp_starter_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wp_starter_scripts' );
+
+/* Navigation */
+function get_main_nav() {
+
+	$args = array(
+		'menu_class' 		=> 'nav navbar-nav',
+		'theme_location'	=> 'primary',
+		'depth'				=> 2,
+		'fallback_cb'       => 'bs4navwalker::fallback',
+        'walker'            => new bs4navwalker()
+	);
+
+	return $args;
+
+}
 
 /**
  * Implement the Custom Header feature.
