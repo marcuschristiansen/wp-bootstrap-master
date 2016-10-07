@@ -7,35 +7,30 @@
  * @package wp_starter
  */
 
-?>
+// check if the flexible content field has rows of data
+if( have_rows('content') ):
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+     // loop through the rows of data
+    while ( have_rows('content') ) : the_row();
 
-	<div class="entry-content">
-		<?php
-			the_content();
+		/* Slider/Carousel */
+        if( get_row_layout() == 'carousel' ):
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp_starter' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+        	get_template_part( 'template-parts/partials/partial', 'carousel' );
 
-	<footer class="entry-footer">
-		<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'wp_starter' ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-		?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+        /* Other Component */
+        elseif( get_row_layout() == 'download' ): 
+
+        	$file = get_sub_field('file');
+
+        endif;
+
+    endwhile;
+
+else :
+
+    // no layouts found
+
+endif;
+
+

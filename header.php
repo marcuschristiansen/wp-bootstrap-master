@@ -25,8 +25,7 @@ $nav_args = get_main_nav(); // functions.php;
 <body <?php body_class(); ?>>
 
 <!-- Navbar -->
-<nav class="navbar navbar-dark bg-inverse">
-	<a class="navbar-brand" href="<?php echo bloginfo('url'); ?>">Project name</a>
-	<!-- Main Nav -->
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+	<a class="navbar-brand" href="#">Project name</a>
 	<?php wp_nav_menu($nav_args); ?>
 </nav>
