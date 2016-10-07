@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-starter",
+  "homepage": "https://github.com/marcuschristiansen/bootstrap-starter",
+  "authors": [
+    "Marcus Christiansen <christiansen.marcus@gmail.com>"
+  ],
+  "description": "All dependencies for the bootstrap starter theme",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.3",
+    "normalize-scss": "git@github.com:JohnAlbin/normalize-scss.git#^4.1.0",
+    "bootstrap": "4.0",
+    "font-awesome": "git@github.com:FortAwesome/Font-Awesome.git",
+    "bourbon": "^4.2.7",
+    "neat": "^1.8.0"
+  }
+}
