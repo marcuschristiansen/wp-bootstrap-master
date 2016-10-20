@@ -21,8 +21,8 @@
 
             <?php $image = get_sub_field('image'); ?>
         
-            <div class="carousel-item <?php echo ($counter == 0) ? 'active' : ''; ?>">
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+            <div class="carousel-item <?php echo ($counter == 0) ? 'active' : ''; ?> bg-img" style="background-image:url('<?php echo $image['url']; ?>');">
+                
                 <!-- Slide Caption -->
                 <?php if(get_sub_field('content')) : ?>
                     <div class="carousel-caption"><?php the_sub_field('content'); ?></div>

@@ -31,3 +31,19 @@ $enable-flex: true;
 html, body {
 	height: 100%;
 }
+
+/* Utility classes */
+.bg-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+
+/* Carousel */
+.carousel {
+	height: 100%;
+	.carousel-inner {
+		height: 100%;
+	}
+}

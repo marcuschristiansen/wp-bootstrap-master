@@ -7196,3 +7196,16 @@ a.text-danger:focus, a.text-danger:hover {
 
 html, body {
   height: 100%; }
+
+/* Utility classes */
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%; }
+
+/* Carousel */
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
