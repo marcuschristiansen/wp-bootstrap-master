@@ -7199,9 +7199,9 @@ html, body {
 
 /* Utility classes */
 .bg-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
   height: 100%; }
 
 /* Carousel */

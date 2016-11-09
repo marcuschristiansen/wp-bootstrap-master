@@ -18,10 +18,20 @@ if( have_rows('content') ):
 
         	get_template_part( 'template-parts/partials/partial', 'carousel' );
 
-        /* Other Component */
-        elseif( get_row_layout() == 'download' ): 
+        /* Jumbotron */
+        elseif( get_row_layout() == 'jumbotron' ): 
 
-        	$file = get_sub_field('file');
+        	get_template_part( 'template-parts/partials/partial', 'jumbotron' );
+
+        /* WYSIWYG */
+        elseif( get_row_layout() == 'wysiwyg' ): 
+
+            get_template_part( 'template-parts/partials/partial', 'wysiwyg' );
+
+        /* WYSIWYG */
+        elseif( get_row_layout() == 'tabbed_content' ): 
+
+            get_template_part( 'template-parts/partials/partial', 'tabs' );
 
         endif;
 
