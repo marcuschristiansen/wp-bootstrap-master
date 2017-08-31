@@ -1,0 +1,15 @@
+.gallery {
+	@include display(flex);
+	@include justify-content(space-between);
+	@include flex-wrap(wrap);
+
+	.gallery-item {
+		margin: 0;
+		display: inline-block;
+	}
+}
+@media (max-width: 992px) {
+	.gallery {
+		display: inline-block;
+	}
+}

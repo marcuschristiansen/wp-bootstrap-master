@@ -1,0 +1,119 @@
+/* 
+ * NAVIGATION 
+ */
+nav.navbar {
+	background-color: rgba(0,0,0,0);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	transition: all 0.3s ease;
+	/* Navbar Logo */
+	.navbar-brand {
+		position: relative;
+		.logo-scrolled {
+			max-width: 50%;
+			display: none;
+		}
+	}
+    .navbar-toggler {
+
+	}
+	/* Navbar */
+	.navbar-collapse {
+		ul.navbar-nav {
+			li {
+				position: relative;
+				border-radius: 3px;
+				&:hover:after, &.current-menu-item:after {
+					content: "";
+				    position: absolute;
+				    width: 30%;
+				    display: block;
+				    margin: 0 auto;
+				    height: 0;
+				    left: 0;
+				    right: 0;
+				    border-bottom: 2px solid #FFFFFF;
+				}
+				// don't add border bottom if the li contains a background class
+				&[class^="bg-"]:hover:after {
+					border: none;
+				}
+				a {
+					color: white;
+					font-family: $secondary-font;
+					font-size: 14px;
+					font-weight: 600;
+					text-transform: uppercase;
+					padding: 14px 30px;
+					color: white;
+					letter-spacing: 1px;
+					transition: all 0.3s ease;
+				}
+			}
+		}
+	}
+}
+/* Navbar After scroll */
+nav.navbar.navbar-shrink {
+	background-color: white;
+  	padding: 10px 0;
+  		-webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+		-moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+		box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+   	.logo {
+    	display: none;
+    }
+    .logo-scrolled {
+    	display: inline;
+    }
+    .navbar-collapse {
+    	ul.navbar-nav {
+    		li {
+    			&:hover:after, &.current-menu-item:after {
+    				border-bottom: 2px solid black;
+    			}
+    			// don't change link color if the li contains a background class
+				&[class^="bg-"] {
+					a {
+						color: white;
+					}
+				}
+				// don't add border bottom if the li contains a background class
+				&[class^="bg-"]:hover:after {
+					border: none;
+				}
+    			a {
+    				color: black;
+    			}
+    		}
+    	}
+    }
+}
+
+@media (max-width: 992px) {
+	nav.navbar {
+		.navbar-brand {
+			max-width: 75%;
+		}
+		/* After scroll */
+		&.navbar-shrink {
+			padding: 30px 16px;
+		}
+		/* When navbar is showing */
+		.navbar-collapse {
+			background-color: white;
+			ul.navbar-nav {
+				li {
+					a {
+						color: black;
+					}
+					&[class^="bg-"] {
+						a {
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+}

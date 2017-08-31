@@ -11,6 +11,13 @@
 //require_once('inc/wbs4navwalker.php'); // Bootstrap 3
 require_once('inc/bs4navwalker.php'); // Bootstrap 4
 
+require_once('inc/sidebars.php');
+
+// class responsible for creating the social media icons widget
+require_once('inc/social-widget.php');
+
+require_once('inc/acf.php');
+
 if ( ! function_exists( 'wp_starter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -118,9 +125,29 @@ add_action( 'widgets_init', 'wp_starter_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wp_starter_scripts() {
-	wp_enqueue_style( 'wp_starter-style', get_stylesheet_uri() );
 
+	/*
+	 * STYLES
+	 */
+	wp_enqueue_style( 'owl-carousel', get_template_directory_uri() . '/assets/bower_components/owl.carousel/dist/assets/owl.carousel.min.css' );
+
+	wp_enqueue_style( 'owl-carousel-default', get_template_directory_uri() . '/assets/bower_components/owl.carousel/dist/assets/owl.theme.default.min.css' );
+
+	wp_enqueue_style( 'swiper-css', get_template_directory_uri() . '/assets/bower_components/swiper/dist/css/swiper.min.css' );
+
+	wp_enqueue_style( 'wp_starter-style', get_stylesheet_uri(), array('otw-shortcode') );
+
+
+	/*
+	 * SCRIPTS
+	 */
 	wp_enqueue_script( 'tether', get_template_directory_uri() . '/assets/bower_components/tether/dist/js/tether.min.js', array('jquery'), '20151215', true );
+
+	wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/assets/bower_components/owl.carousel/dist/owl.carousel.min.js', array('jquery'), '20151215', true );
+
+	wp_enqueue_script( 'owl-carousel-rows', get_template_directory_uri() . '/js/owl.rows.js', array('jquery', 'owl-carousel'), '20151215', true );
+
+	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/bower_components/swiper/dist/js/swiper.min.js', array('jquery'), '20151215', true );
 
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/bower_components/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '20151215', true );
 
@@ -140,7 +167,8 @@ add_action( 'wp_enqueue_scripts', 'wp_starter_scripts' );
 function get_main_nav() {
 
 	$args = array(
-		'menu_class' 		=> 'nav navbar-nav',
+		'menu_class' 		=> 'navbar-nav',
+		'container_class'	=> 'menu-main-menu-container ml-auto',
 		'theme_location'	=> 'primary',
 		'depth'				=> 2,
 		'fallback_cb'       => 'bs4navwalker::fallback',
@@ -150,6 +178,11 @@ function get_main_nav() {
 	return $args;
 
 }
+
+function clear_br($content){
+	return str_replace("<br />","<br clear='none'/>", $content);
+}
+add_filter('the_content', 'clear_br');
 
 /**
  * Implement the Custom Header feature.

@@ -1,10 +1,9 @@
 [![Neat](http://images.thoughtbot.com/bourbon/neat-logo.svg)](http://neat.bourbon.io)
 
-[![Gem Version](http://img.shields.io/gem/v/neat.svg?style=flat)](https://rubygems.org/gems/neat) [![Travis](http://img.shields.io/travis/thoughtbot/neat.svg?style=flat)](https://travis-ci.org/thoughtbot/neat)
-[![Gitter](http://img.shields.io/badge/gitter-neat-ae3dd2.svg?style=flat)](https://gitter.im/thoughtbot/neat)
-[![Stack Overflow](http://img.shields.io/badge/stack%20overflow-neat-ae3dd2.svg?style=flat)](http://stackoverflow.com/questions/tagged/neat)
-
 ## A lightweight, semantic grid framework
+
+**Note: This branch is an archive of Neat v1. The current release is v2 on
+`master`.**
 
 Neat is a fluid grid framework with the aim of being easy enough to use out of the box and flexible enough to customize down the road.
 
@@ -269,7 +268,7 @@ Copyright © 2012–2015 [thoughtbot, inc](http://thoughtbot.com). Neat is free 
 
 ## About thoughtbot
 
-[<img src="http://thoughtbot.github.io/images/signature.svg" width="250" alt="thoughtbot logo">][hire]
+[<img src="http://presskit.thoughtbot.com/images/signature.svg" width="250" alt="thoughtbot logo">][hire]
 
 Neat is maintained and funded by thoughtbot, inc.
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.

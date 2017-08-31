@@ -28,10 +28,25 @@ if( have_rows('content') ):
 
             get_template_part( 'template-parts/partials/partial', 'wysiwyg' );
 
-        /* WYSIWYG */
+        /* Tabs */
         elseif( get_row_layout() == 'tabbed_content' ): 
 
             get_template_part( 'template-parts/partials/partial', 'tabs' );
+
+        /* Icon Row */
+        elseif( get_row_layout() == 'icon_row' ): 
+    
+            get_template_part( 'template-parts/partials/partial', 'icons' );
+
+        /* Icon Row */
+        elseif( get_row_layout() == 'slider' ): 
+            
+            get_template_part( 'template-parts/partials/partial', 'slider' );
+
+        /* Icon Row */
+        elseif( get_row_layout() == 'logo_carousel' ): 
+            
+            get_template_part( 'template-parts/partials/partial', 'logo_carousel' );
 
         endif;
 

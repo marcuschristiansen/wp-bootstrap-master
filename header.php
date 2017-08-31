@@ -24,8 +24,22 @@ $nav_args = get_main_nav(); // functions.php;
 
 <body <?php body_class(); ?>>
 
-<!-- Navbar -->
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-	<a class="navbar-brand" href="#">Project name</a>
-	<?php wp_nav_menu($nav_args); ?>
+<nav class="navbar fixed-top navbar-expand-md navbar-dark" id="mainNav">
+	<div class="container">
+		<!-- Logo -->
+		<a class="navbar-brand" href="<?php echo bloginfo('url'); ?>">
+			<img class="logo img-fluid" src="<?php echo get_theme_mod('payfast_logo'); ?>" width="288" height="" alt="">
+			<!-- Display after scroll -->
+			<img class="logo-scrolled img-fluid" src="<?php echo get_theme_mod('payfast_logo_scroll'); ?>" width="288" height="" alt="">
+		</a>
+		<!-- Mobile Menu Button -->
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
+		<!-- Navbar -->
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  		<?php wp_nav_menu($nav_args); ?>
+	  	</div>
+  	</div>
 </nav>
+

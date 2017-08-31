@@ -17,9 +17,14 @@
   "dependencies": {
     "jquery": "~2.2.3",
     "normalize-scss": "git@github.com:JohnAlbin/normalize-scss.git#^4.1.0",
+    "popper.js": "https://unpkg.com/popper.js",
     "bootstrap": "4.0",
     "font-awesome": "git@github.com:FortAwesome/Font-Awesome.git",
     "bourbon": "^4.2.7",
-    "neat": "^1.8.0"
+    "neat": "^1.8.0",
+    "tether": "^1.4.0",
+    "waypoints": "^4.0.1",
+    "owl.carousel": "owl-carousel2#^2.2.1",
+    "swiper": "^3.4.2"
   }
 }

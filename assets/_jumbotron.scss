@@ -1,0 +1,39 @@
+ /* Jumbotron */
+.jumbotron {
+	border-radius: 0;
+	overflow: hidden;
+	padding: 0;
+	.heading {
+		font-family: $primary-font;
+		font-size: 60px;	
+		font-weight: 300;
+		line-height: 1.4;
+	}
+	.paragraph {
+		font-family: $primary-font;
+		font-size: 33px;
+		font-weight: 300;
+		line-height: 1.6;
+	}
+	.btn {
+		&:hover {
+			color: inherit;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.jumbotron {
+		.inner-wrap {
+			padding-top: 130px;
+		}
+		.heading {
+			font-size: 30px;
+			text-align: center;
+		}
+		.paragraph {
+			font-size: 18px;
+			text-align: center;
+		}
+	}
+}
