@@ -166,6 +166,13 @@ a {
 		font-size: 60px;
 	}
 }
+@media (max-width: 992px) {
+	.icons {
+		h1 {
+			font-size: 41px;
+		}
+	}
+}
 
 footer {
 	padding: 100px 0 255px 0;
