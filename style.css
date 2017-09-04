@@ -8906,7 +8906,7 @@ nav.navbar.navbar-shrink {
     padding: 18px 30px; } }
 @media (max-width: 992px) {
   .jumbotron img {
-    max-width: 60%; }
+    display: none; }
   .jumbotron .inner-wrap {
     padding-top: 130px; }
   .jumbotron .heading {
