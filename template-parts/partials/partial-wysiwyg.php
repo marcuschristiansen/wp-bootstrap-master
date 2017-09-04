@@ -6,7 +6,7 @@ $bg_colour = get_sub_field('background_colour');
 $bg_image  = get_sub_field('background_image');
 ?>
 
-<section class="wysiwyg" style="background-image:url('<?php echo $bg_image['url']; ?>');background-color:<?php echo $bg_colour; ?>;padding-top:<?php echo $padding_top; ?>;padding-bottom:<?php echo $padding_bottom; ?>;">
+<section class="wysiwyg bg-img" style="background-image:url('<?php echo $bg_image['url']; ?>');background-color:<?php echo $bg_colour; ?>;padding-top:<?php echo $padding_top; ?>;padding-bottom:<?php echo $padding_bottom; ?>;">
 	<div class="<?php echo $container; ?>">
 		<div class="row">
 			<?php if(have_rows('editors')): ?>

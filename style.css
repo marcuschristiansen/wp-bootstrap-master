@@ -8946,9 +8946,16 @@ nav.navbar.navbar-shrink {
 @media (max-width: 992px) {
   .gallery {
     display: inline-block; } }
+.wysiwyg {
+  height: auto !important; }
+  .wysiwyg h1 {
+    font-size: 60px; }
+
 @media (max-width: 992px) {
   .wysiwyg {
-    text-align: center; } }
+    text-align: center; }
+    .wysiwyg h1 {
+      font-size: 41px; } }
 /* Slider */
 .slider h1,
 .slider h2,
@@ -9015,11 +9022,12 @@ h6 {
   color: #033a59; }
 
 h1 {
-  font-size: 41px;
+  font-size: 60px;
   font-weight: 300; }
 
 h2 {
-  font-size: 32px; }
+  font-size: 41px;
+  font-weight: 300; }
 
 h4 {
   line-height: 1.4; }
@@ -9079,6 +9087,8 @@ a {
     background-image: none;
     text-decoration: none;
     text-shadow: none; }
+  .otw-button.large {
+    font-size: 22px; }
 
 /* Carousel */
 .carousel {
@@ -9102,9 +9112,16 @@ footer {
   padding: 100px 0 255px 0;
   background-color: #262626;
   color: white; }
+  footer a {
+    font-size: 16px; }
+  footer p {
+    line-height: inherit;
+    font-size: 16px; }
   footer .widget .widget-title {
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bold; }
   footer .widget ul.menu {
     padding-left: 0; }
     footer .widget ul.menu li {
