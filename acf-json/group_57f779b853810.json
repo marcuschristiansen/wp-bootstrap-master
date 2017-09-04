@@ -521,6 +521,48 @@
                             "ui_off_text": ""
                         },
                         {
+                            "key": "field_59ad233ca09e8",
+                            "label": "Top Padding",
+                            "name": "top_padding",
+                            "type": "number",
+                            "instructions": "Please add padding in px value. Default: 100",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 100,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_59ad2372a09e9",
+                            "label": "Bottom Padding",
+                            "name": "bottom_padding",
+                            "type": "number",
+                            "instructions": "Please add padding in px value. Default: 100",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 100,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        },
+                        {
                             "key": "field_5808ade23ccce",
                             "label": "Editors",
                             "name": "editors",
@@ -1083,7 +1125,10 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "choices": [],
+                            "choices": [
+                                "Carousel 0",
+                                "Carousel 1"
+                            ],
                             "default_value": [],
                             "allow_null": 0,
                             "multiple": 0,
@@ -1121,5 +1166,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1503666127
+    "modified": 1504519405
 }

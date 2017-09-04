@@ -1,10 +1,12 @@
 <?php 
 $container = (get_sub_field('container')) ? 'container' : '';
+$padding_top = get_sub_field('top_padding') . 'px';
+$padding_bottom = get_sub_field('bottom_padding') . 'px';
 $bg_colour = get_sub_field('background_colour');
 $bg_image  = get_sub_field('background_image');
 ?>
 
-<section class="wysiwyg" style="background-image:url('<?php echo $bg_image['url']; ?>');background-color:<?php echo $bg_colour; ?>">
+<section class="wysiwyg" style="background-image:url('<?php echo $bg_image['url']; ?>');background-color:<?php echo $bg_colour; ?>;padding-top:<?php echo $padding_top; ?>;padding-bottom:<?php echo $padding_bottom; ?>;">
 	<div class="<?php echo $container; ?>">
 		<div class="row">
 			<?php if(have_rows('editors')): ?>
