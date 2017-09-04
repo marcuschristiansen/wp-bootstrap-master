@@ -85,9 +85,9 @@ h4 {
 }
 p {
 	font-family: $primary-font;
-	font-size: 1.3rem;
+	font-size: 28px;
 	font-weight: 100;
-	line-height: 1.8;
+	line-height: 47px;
 }
 a {
 	color: inherit;
@@ -164,6 +164,10 @@ a {
 	padding: 100px 0;
 	h1 {
 		font-size: 60px;
+	}
+	h4 {
+		font-size: 22px;
+		line-height: 36px;
 	}
 }
 @media (max-width: 992px) {
