@@ -18,6 +18,8 @@
 		// Owl Slider
 		$('.owl-slider-carousel').owlCarousel({
 		    loop:true,
+		    autoplay: true,
+		    autoplayHoverPause: true,
 		    margin:10,
 		    nav:false,
 		    dots: true,

@@ -8957,7 +8957,10 @@ nav.navbar.navbar-shrink {
 .slider h5,
 .slider h6 {
   color: white; }
+.slider h1 {
+  font-size: 60px; }
 .slider p {
+  font-size: 30px;
   margin-top: 20px; }
 .slider .owl-stage {
   padding-top: 125px;
