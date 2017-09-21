@@ -61,6 +61,7 @@ html, body {
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	font-size: 62.5%;
 }
 
 h1,
@@ -74,11 +75,11 @@ h6 {
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 6rem;
 	font-weight: 300;
 }
 h2 {
-	font-size: 41px;
+	font-size: 4.1rem;
 	font-weight: 300;
 }
 h4 {
@@ -86,9 +87,9 @@ h4 {
 }
 p {
 	font-family: $primary-font;
-	font-size: 28px;
+	font-size: 2.8rem;
 	font-weight: 100;
-	line-height: 47px;
+	line-height: 4.7rem;
 }
 a {
 	color: inherit;
@@ -123,11 +124,11 @@ a {
 .btn {
 	text-transform: uppercase;
 	font-family: $primary-font;
-	font-size: 22px;
+	font-size: 2.2rem;
 	font-weight: 900;
 	color: white;
 	border-color: rgba(0,0,0,0);
-	padding: 25px 40px;
+	padding: 2.5rem 4rem;
 	&.bg-red {
 		background-color: #ff0000;
 	}
@@ -138,18 +139,18 @@ a {
 
 /* Button Shortcode */
 .otw-button {
-	padding: 25px 40px;
-	margin-top: 50px;
+	padding: 2.5rem 4rem;
+	margin-top: 5rem;
 	background-image: none;
 	text-shadow: none;
-	letter-spacing: 2px;
+	letter-spacing: 0.2rem;
 	&:hover {
 		background-image: none;
 		text-decoration: none;
 		text-shadow: none;
 	}
 	&.large {
-		font-size: 22px;
+		font-size: 2.2rem;
 	}
 }
 
@@ -164,39 +165,39 @@ a {
 
 /* Icon Row */
 .icons {
-	padding: 100px 0;
+	padding: 10rem 0;
 	h1 {
-		font-size: 60px;
+		font-size: 6rem;
 	}
 	h4 {
-		font-size: 22px;
-		line-height: 36px;
+		font-size: 2.2rem;
+		line-height: 3.6rem;
 	}
 }
 @media (max-width: 992px) {
 	.icons {
 		h1 {
-			font-size: 41px;
+			font-size: 4.1rem;
 		}
 	}
 }
 
 footer {
-	padding: 100px 0 255px 0;
+	padding: 10rem 0 25.5rem 0;
 	background-color: #262626;
 	color: white;
 	a {
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 	p {
 		line-height: inherit;
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 	.widget {
 		.widget-title {
 			color: white;
 			text-transform: uppercase;
-			font-size: 19px;
+			font-size: 1.9rem;
 			font-weight: bold;
 		}
 		ul.menu {
@@ -211,6 +212,26 @@ footer {
 		}
 	}
 }
+
+
+
+
+@media only screen and (max-width: 992px) {
+	html {
+		font-size: 7.5px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 5px;
+	}
+}
+@media only screen and (max-width: 576px) {
+	html {
+		font-size: 2.5px;
+	}
+}
+
 
 
 

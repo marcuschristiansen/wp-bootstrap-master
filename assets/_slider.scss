@@ -9,10 +9,10 @@
 		color: white;
 	}
 	h1 {
-		font-size: 60px;
+		font-size: 6rem;
 	}
 	p {
-		font-size: 30px;
+		font-size: 3rem;
 		margin-top: 20px;
 	}
 	.owl-stage {
@@ -34,9 +34,9 @@
 	}
 }
 .logo-carousel {
-	padding: 100px 0;
+	padding: 10rem 0;
 	h1 {
-		margin-bottom: 60px;
+		margin-bottom: 6rem;
 	}
 	.owl-stage {
 	}
@@ -48,14 +48,14 @@
 		}
 		span {
 			background: #8e939f;
-			margin: 5px 10px;
+			margin: 0.5rem 1rem;
 		}
 	}
 	.swiper-pagination {
 		position: static;
-    	margin-top: 20px;
+    	margin-top: 2rem;
     	.swiper-pagination-bullet {
-    		margin: 0 10px;
+    		margin: 0 1rem;
     	}
     	.swiper-pagination-bullet-active {
     		background: $secondary-color;
@@ -65,8 +65,8 @@
 @media (max-width: 992px) {
 	.slider {
 		.owl-stage {
-			padding-top: 50px;
-			padding-bottom: 50px;
+			padding-top: 5rem;
+			padding-bottom: 5rem;
 			.owl-item {
 				text-align: center;
 			}

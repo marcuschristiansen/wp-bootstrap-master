@@ -3,8 +3,8 @@
  */
 nav.navbar {
 	background-color: rgba(0,0,0,0);
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 	transition: all 0.3s ease;
 	/* Navbar Logo */
 	.navbar-brand {
@@ -22,7 +22,7 @@ nav.navbar {
 		ul.navbar-nav {
 			li {
 				position: relative;
-				border-radius: 3px;
+				border-radius: 0.3rem;
 				&:hover:after, &.current-menu-item:after {
 					content: "";
 				    position: absolute;
@@ -32,7 +32,7 @@ nav.navbar {
 				    height: 0;
 				    left: 0;
 				    right: 0;
-				    border-bottom: 2px solid #FFFFFF;
+				    border-bottom: 0.2rem solid #FFFFFF;
 				}
 				// don't add border bottom if the li contains a background class
 				&[class^="bg-"]:hover:after {
@@ -41,12 +41,12 @@ nav.navbar {
 				a {
 					color: white;
 					font-family: $secondary-font;
-					font-size: 16px;
+					font-size: 1.6rem;
 					font-weight: 500;
 					text-transform: uppercase;
-					padding: 14px 30px;
+					padding: 1.4rem 3rem;
 					color: white;
-					letter-spacing: 1px;
+					letter-spacing: 0.1rem;
 					transition: all 0.3s ease;
 				}
 			}
@@ -56,10 +56,10 @@ nav.navbar {
 /* Navbar After scroll */
 nav.navbar.navbar-shrink {
 	background-color: white;
-  	padding: 10px 0;
-  		-webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-		-moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-		box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+  	padding: 1rem 0;
+  		-webkit-box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,0.25);
+		-moz-box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,0.25);
+		box-shadow: 0 0.1rem 0.1rem 0 rgba(0,0,0,0.25);
    	.logo {
     	display: none;
     }
@@ -70,7 +70,7 @@ nav.navbar.navbar-shrink {
     	ul.navbar-nav {
     		li {
     			&:hover:after, &.current-menu-item:after {
-    				border-bottom: 2px solid black;
+    				border-bottom: 0.2rem solid black;
     			}
     			// don't change link color if the li contains a background class
 				&[class^="bg-"] {
@@ -97,7 +97,7 @@ nav.navbar.navbar-shrink {
 		}
 		/* After scroll */
 		&.navbar-shrink {
-			padding: 30px 16px;
+			padding: 3rem 1.6rem;
 		}
 		/* When navbar is showing */
 		.navbar-collapse {
